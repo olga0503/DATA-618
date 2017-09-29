@@ -238,12 +238,12 @@ def stock_summary(stock_title):
              pl_line.append(wap)
 
              if  num_buys > 0:
-                 upl= (market_price - wap)/num_buys
+                 upl= (market_price - wap)*num_buys
              else:
                  upl = 0  
 
              if  num_sold > 0:    
-                 rpl= (float(get_price(x)) - wap)/num_sold
+                 rpl= (market_price - wap)*num_sold
              else:
                  rpl = 0  
 
